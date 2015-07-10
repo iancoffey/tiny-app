@@ -2,6 +2,6 @@ require 'sinatra/base'
 
 class TinyApp < Sinatra::Base
   get '/' do
-    "OK!"
+    "OK!!"
   end
 end
