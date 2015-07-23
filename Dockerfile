@@ -7,7 +7,7 @@ EXPOSE 80
 
 # Install teh rubez
 RUN apt-get update
-RUN apt-get -y install build-essential git libssl-dev curl git
+RUN apt-get -y install build-essential git libssl-dev curl git libreadline-dev
 
 RUN git clone https://github.com/sstephenson/rbenv.git /usr/local/rbenv
 
