@@ -1,6 +1,8 @@
 FROM alpine:3.2
 MAINTAINER Ian Coffey "icoffey@engineyard.com"
 
+EXPOSE 80
+
 RUN apk update && \
     apk upgrade && \
     apk add curl \
