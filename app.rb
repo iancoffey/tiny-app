@@ -3,8 +3,8 @@ require "redis"
 
 # beginning of kitchen sink tester in ruby
 # goal - test while being as obvious as possible whats wrong - which means as little magic as possible.
-host = ENV["REDIS_HOST"] ||= "localhost"
-port = ENV["REDIS_PORT"] ||=  "6379"
+host = ENV["REDIS_MASTER_SERVICE_HOST"] ||= "localhost"
+port = ENV["REDIS_MASTER_SERVICE_PORT"] ||=  "6379"
 
 $redis = Redis.new(host: host, port: port)
 
